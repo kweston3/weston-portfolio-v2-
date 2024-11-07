@@ -21,6 +21,28 @@ h1 {
   margin-top: 0px;
 }
 
+h3 {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1rem;
+}
+
+.light-btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #43b7ff;
+  color: #001f3f;
+  text-decoration: none;
+  border-radius: 35px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.dark-btn {
+}
+
 /* Header styling */
 header {
   width: 100%;
@@ -39,7 +61,7 @@ header {
 .logo {
   flex: 1;
   text-decoration: none;
-  color: #1a307c;
+  color: #001f3f;
 }
 
 .nav {
@@ -61,7 +83,7 @@ header {
 
 .nav-list a {
   text-decoration: none;
-  color: #1a307c;
+  color: #001f3f;
   font-weight: bold;
   font-size: 15px;
 }
@@ -79,7 +101,7 @@ header {
   text-align: center;
   text-decoration: none;
   color: white;
-  background-color: #1a307c;
+  background-color: #001f3f;
   font-weight: bold;
   padding: 18px 40px;
   border-radius: 25px;
@@ -101,7 +123,7 @@ header {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #1a307c;
+  background-color: #001f3f;
 }
 
 /* Responsive Styling */
@@ -163,19 +185,3 @@ main {
   margin-top: 50px;
   padding: 0 25px;
 }
-
-/* FOOTER */
-
-/* LINKS */
-
-/* BUTTON */
-
-/* ICONS */
-
-/* PORTFOLIO PROJECT */
-
-/* REVIEWS */
-
-/* QUESTION BOX */
-
-/* CONTACT BOX */
