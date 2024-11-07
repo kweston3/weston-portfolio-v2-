@@ -1,0 +1,159 @@
+/* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
+
+/*-- -------------------------- -->
+<---          Home           -->
+<--- -------------------------- -*/
+
+#hero-section {
+  width: 100%;
+  height: 650px;
+  background-color: #1a307c;
+  margin-top: -120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+  padding: 10px 40px;
+  overflow: hidden;
+}
+
+.hero-text {
+  margin-top: 120px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: white;
+  color: #0056b3;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.hero-button:hover {
+  background-color: #007bff; /* Darker shade on hover */
+}
+
+.hero-image {
+  margin-left: 25px;
+  margin-top: 120px;
+}
+
+.hero-image img {
+  min-width: 100px;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column; /* Stack items on top of each other */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Add more padding on mobile */
+  }
+
+  .hero-text {
+    max-width: 100%; /* Allow text to take full width */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Smaller paragraph size for mobile */
+  }
+
+  .hero-image {
+    max-width: 400px; /* Allow image to take full width */
+    width: 70%;
+    display: flex; /* Center image */
+    justify-content: center;
+    margin: 0px;
+    margin-top: 50px; /* Space above the image */
+  }
+
+  .hero-image img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* ABOUT SECTION */
+#about-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-text {
+  flex: 3;
+  margin-left: 50px;
+}
+
+.about-image img {
+  min-width: 100px;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  #about-section {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .about-image {
+    max-width: 600px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .about-image img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio. */
+  }
+
+  .about-text {
+    order: -1;
+    margin-left: 0px;
+  }
+}
