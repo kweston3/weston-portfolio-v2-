@@ -61,6 +61,10 @@ h3 {
   margin-top: 15px;
 }
 
+.light-btn:hover {
+  background-color: white;
+}
+
 .dark-btn {
   display: inline-block;
   padding: 20px 40px;
