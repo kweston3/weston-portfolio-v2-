@@ -208,48 +208,72 @@
   margin-right: 40px;
 }
 
-.services {
+.portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-.service {
-  border: 3px solid #001f3f;
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
   border-radius: 20px;
-  padding: 40px;
 }
 
-.service a {
-  color: #333;
-  text-decoration-color: #001f3f;
+/* Overlay background */
+.portfolio-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-#services-section {
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-item h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* FAQ SECTION */
+#faq-section {
+  width: 100%;
+  background-color: #001f3f;
+  color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 1300px;
+  padding-top: 50px;
   margin-top: 75px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
-.services {
+.questions {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
-  margin-top: 25px;
+  grid-template-columns: repeat(1fr);
+  max-width: 1300px;
+  width: 100%;
+  padding: 50px 40px;
 }
 
-.service {
-  border: 3px solid #001f3f;
-  border-radius: 20px;
-  padding: 40px;
-}
-
-.service a {
-  color: #333;
-  text-decoration-color: #001f3f;
+.question {
+  border: 2px solid #f2f2f2;
 }

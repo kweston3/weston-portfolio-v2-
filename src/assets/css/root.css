@@ -81,8 +81,12 @@ h4 {
   margin-top: 10px;
 }
 
+.dark-btn:hover {
+  background-color: #007bff;
+}
+
 .icon {
-  background-color: blue;
+  background-color: #007bff;
   width: 100px;
   height: 50px;
 }
