@@ -5,7 +5,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #333333;
+  color: #444;
   margin: 0;
   padding: 0;
   display: flex;
@@ -25,15 +25,20 @@ h2 {
   font-size: 2rem;
   margin-top: 25px;
   margin-bottom: 15px;
-  text-decoration: underline;
 }
 
 h3 {
-  color: #666;
+  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+h4 {
+  color: #001f3f;
   font-size: 1.1rem;
   margin-top: 0px;
   margin-bottom: 10px;
-  letter-spacing: 0.1rem;
 }
 
 @media (max-width: 1024px) {
@@ -58,7 +63,7 @@ h3 {
   text-decoration: none;
   border-radius: 35px;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .light-btn:hover {
@@ -73,7 +78,7 @@ h3 {
   text-decoration: none;
   border-radius: 35px;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .icon {
