@@ -201,7 +201,7 @@
 #portfolio-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   max-width: 1300px;
   margin-top: 75px;
   margin-left: 40px;
@@ -266,14 +266,34 @@
   margin-top: 75px;
 }
 
+#faq-section h4 {
+  color: white;
+}
+
 .questions {
   display: grid;
   grid-template-columns: repeat(1fr);
   max-width: 1300px;
   width: 100%;
-  padding: 50px 40px;
+  padding: 40px 40px;
 }
 
 .question {
   border: 2px solid #f2f2f2;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.question-title {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.question-answer {
+  display: none; /* Hide answers by default */
+  padding: 10px 0;
+  color: #f2f2f2;
+  margin: 0;
 }
