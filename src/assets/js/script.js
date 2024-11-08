@@ -18,3 +18,17 @@ window.addEventListener("scroll", function () {
     header.classList.remove("sticky");
   }
 });
+
+// JavaScript to handle toggling of answers
+document.querySelectorAll(".question-title").forEach((question) => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling; // Get the <p> tag after the <h2>
+
+    // Toggle visibility of the answer
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+});
