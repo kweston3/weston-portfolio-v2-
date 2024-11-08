@@ -266,6 +266,43 @@
           </div>
         </div>
       </section>
+
+      <section id="contact-section">
+        <h4>REACH OUT AND I WILL RESPOND BACK</h4>
+        <h1>CONTACT</h1>
+        <form
+          name="contact"
+          action="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label
+              >Don’t fill this out if you're human: <input name="bot-field"
+            /></label>
+          </p>
+          <div class="form-row">
+            <p>
+              <label>Name* <input type="text" name="name" required /></label>
+            </p>
+            <p>
+              <label>Email* <input type="email" name="email" required /></label>
+            </p>
+            <p>
+              <label>Phone <input type="text" name="phone" /></label>
+            </p>
+          </div>
+          <p>
+            <label
+              >Message* <textarea name="message" required></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit" class="dark-btn">SEND MESSAGE</button>
+          </p>
+        </form>
+      </section>
     </main>
 
     <footer></footer>
