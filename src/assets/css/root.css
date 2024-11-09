@@ -79,6 +79,8 @@ h4 {
   border-radius: 35px;
   font-weight: bold;
   margin-top: 10px;
+  border: 0px;
+  cursor: pointer;
 }
 
 .dark-btn:hover {
@@ -183,6 +185,7 @@ header.sticky {
   transition: background-color 0.3s ease;
   width: 50px;
   height: 50px;
+  margin-top: -7px;
 }
 
 .hamburger span {
@@ -234,7 +237,7 @@ header.sticky {
   }
 
   .hamburger {
-    display: flex; /* Show the hamburger menu */
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
