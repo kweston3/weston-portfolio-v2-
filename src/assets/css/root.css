@@ -183,6 +183,10 @@ header.sticky {
   color: #007bff;
 }
 
+.nav-list a.active {
+  color: #007bff; /* Light blue color for active link */
+}
+
 /* Hamburger menu styling */
 .hamburger {
   display: none;

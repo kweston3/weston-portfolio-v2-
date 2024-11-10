@@ -65,6 +65,9 @@
 
   .hero p {
     font-size: 1rem; /* Smaller paragraph size for mobile */
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
   }
 
   .hero-image {
