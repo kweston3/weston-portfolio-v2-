@@ -514,7 +514,7 @@ main {
   align-items: flex-start; /* Align the section contents to the left */
   width: 100%; /* Ensure the section takes full width */
   max-width: 1350px;
-  padding: 50px 40px;
+  padding: 75px 40px;
 }
 
 form {
