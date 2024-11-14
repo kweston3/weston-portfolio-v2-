@@ -128,6 +128,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   max-width: 1400px;
   padding: 10px 20px;
   margin-top: 30px;
@@ -185,6 +186,52 @@ header.sticky {
 
 .nav-list a.active {
   color: #007bff; /* Light blue color for active link */
+}
+
+/* Dropdown container styling */
+.nav-list .dropdown {
+  position: relative; /* Required for absolute positioning of the dropdown menu */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%; /* Position below the parent list item */
+  left: 0;
+  background-color: white;
+  padding: 0;
+  border-radius: 10px;
+  min-width: 160px; /* Set a width for the dropdown */
+  z-index: 10;
+  padding-top: 36px;
+  border-bottom: 5px solid #007bff;
+}
+
+/* Show dropdown menu when hovering over the dropdown list item */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown menu links */
+.dropdown-menu li {
+  margin: 0;
+  list-style-type: none;
+  background-color: #f2f2f22c;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 16px 15px;
+  text-decoration: none;
+  color: #001f3f;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+  color: #007bff;
 }
 
 /* Hamburger menu styling */
@@ -249,13 +296,6 @@ header.sticky {
     display: none; /* Hide the CTA button */
   }
 
-  .hamburger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-  }
-
   .nav-list.active {
     display: flex;
     flex-direction: column;
@@ -275,6 +315,22 @@ header.sticky {
 
   .nav-list.active li a {
     font-size: clamp(15px, 2vw, 24px);
+  }
+
+  .dropdown-menu {
+    display: none;
+    z-index: -10;
+  }
+
+  .dropdown-menu li {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
   }
 }
 

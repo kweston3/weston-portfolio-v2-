@@ -13,10 +13,17 @@
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="index.html" class="active">HOME</a></li>
-          <li><a href="./pages/about.html">ABOUT</a></li>
-          <li><a href="./pages/services.html">SERVICES</a></li>
-          <li><a href="./pages/portfolio.html">PORTFOLIO</a></li>
-          <li><a href="./pages/contact.html">CONTACT</a></li>
+          <li><a href="./pages/about/about.html">ABOUT</a></li>
+          <li class="dropdown">
+            <a href="./pages/services/services.html">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a href="./pages/services/service1.html">SERVICE 1</a></li>
+              <li><a href="./pages/services/service2.html">SERVICE 2</a></li>
+              <li><a href="./pages/services/service3.html">SERVICE 3</a></li>
+            </ul>
+          </li>
+          <li><a href="./pages/portfolio/portfolio.html">PORTFOLIO</a></li>
+          <li><a href="./pages/contact/contact.html">CONTACT</a></li>
         </ul>
         <div class="hamburger">
           <span></span>
@@ -25,7 +32,7 @@
         </div>
       </nav>
       <div class="nav-cta">
-        <a href="./pages/contact.html">CONTACT ME</a>
+        <a href="./pages/contact/contact.html">CONTACT ME</a>
       </div>
     </header>
 
@@ -39,7 +46,9 @@
               offer here. Your short paragraph goes here. You can describe your
               project or offer here.
             </p>
-            <a href="./pages/contact.html" class="light-btn">GET IN TOUCH</a>
+            <a href="./pages/contact/contact.html" class="light-btn"
+              >GET IN TOUCH</a
+            >
           </div>
           <div class="hero-image">
             <img
@@ -180,46 +189,28 @@
         <h5>AFFORDABLE AND UNBEATABLE VALUE</h5>
         <h2>Portfolio</h2>
         <div class="portfolio">
-          <a href="website-design.html" class="portfolio-item">
-            <img
-              src="/src/assets/images/Advertising.JPG"
-              alt="Website Design"
-            />
+          <a href="#" class="portfolio-item">
+            <img src="assets/images/Advertising.JPG" alt="Website Design" />
             <h3>Website Design</h3>
           </a>
-          <a href="website-updates.html" class="portfolio-item">
-            <img
-              src="/src/assets/images/Advertising.JPG"
-              alt="Website Updates"
-            />
+          <a href="#" class="portfolio-item">
+            <img src="assets/images/Advertising.JPG" alt="Website Updates" />
             <h3>Website Updates</h3>
           </a>
-          <a href="graphic-design.html" class="portfolio-item">
-            <img
-              src="/src/assets/images/Advertising.JPG"
-              alt="Graphic Design"
-            />
+          <a href="#" class="portfolio-item">
+            <img src="assets/images/Advertising.JPG" alt="Graphic Design" />
             <h3>Graphic Design</h3>
           </a>
-          <a href="website-design.html" class="portfolio-item">
-            <img
-              src="/src/assets/images/Advertising.JPG"
-              alt="Website Design"
-            />
+          <a href="#" class="portfolio-item">
+            <img src="assets/images/Advertising.JPG" alt="Website Design" />
             <h3>Website Design</h3>
           </a>
-          <a href="website-updates.html" class="portfolio-item">
-            <img
-              src="/src/assets/images/Advertising.JPG"
-              alt="Website Updates"
-            />
+          <a href="#" class="portfolio-item">
+            <img src="assets/images/Advertising.JPG" alt="Website Updates" />
             <h3>Website Updates</h3>
           </a>
-          <a href="graphic-design.html" class="portfolio-item">
-            <img
-              src="/src/assets/images/Advertising.JPG"
-              alt="Graphic Design"
-            />
+          <a href="#" class="portfolio-item">
+            <img src="assets/images/Advertising.JPG" alt="Graphic Design" />
             <h3>Graphic Design</h3>
           </a>
         </div>
@@ -308,6 +299,6 @@
 
     <footer></footer>
 
-    <script src="./src/assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

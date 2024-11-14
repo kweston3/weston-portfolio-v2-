@@ -4,19 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
-    <link rel="stylesheet" href="../assets/css/root.css" />
-    <link rel="stylesheet" href="../assets/css/about.css" />
+    <link rel="stylesheet" href="../../assets/css/root.css" />
+    <link rel="stylesheet" href="../../assets/css/about.css" />
   </head>
   <body>
     <header>
-      <a href="../index.html" class="logo">Logo</a>
+      <a href="../../index.html" class="logo">Logo</a>
       <nav class="nav">
         <ul class="nav-list">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="./about.html">ABOUT</a></li>
-          <li><a href="./services.html" class="active">SERVICES</a></li>
-          <li><a href="./portfolio.html">PORTFOLIO</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="../../index.html">HOME</a></li>
+          <li><a href="../about/about.html">ABOUT</a></li>
+          <li class="dropdown">
+            <a href="../services/services.html" class="active">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a href="../services/graphic-design.html">SERVICE 1</a></li>
+              <li><a href="../services/graphic-design.html">SERVICE 2</a></li>
+              <li><a href="../services/graphic-design.html">SERVICE 3</a></li>
+            </ul>
+          </li>
+          <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+          <li><a href="../contact/contact.html">CONTACT</a></li>
         </ul>
         <div class="hamburger">
           <span></span>
@@ -25,7 +32,7 @@
         </div>
       </nav>
       <div class="nav-cta">
-        <a href="./contact.html">CONTACT ME</a>
+        <a href="../contact/contact.html">CONTACT ME</a>
       </div>
     </header>
 
@@ -111,6 +118,6 @@
 
     <footer></footer>
 
-    <script src="../assets/js/script.js"></script>
+    <script src="../../assets/js/script.js"></script>
   </body>
 </html>

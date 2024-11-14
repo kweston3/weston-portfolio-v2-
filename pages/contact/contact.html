@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <link rel="stylesheet" href="../assets/css/root.css" />
-    <link rel="stylesheet" href="../assets/css/about.css" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../../assets/css/root.css" />
+    <link rel="stylesheet" href="../../assets/css/about.css" />
   </head>
   <body>
     <header>
-      <a href="../index.html" class="logo">Logo</a>
+      <a href="../../index.html" class="logo">Logo</a>
       <nav class="nav">
         <ul class="nav-list">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="./about.html" class="active">ABOUT</a></li>
-          <li><a href="./services.html">SERVICES</a></li>
-          <li><a href="./portfolio.html">PORTFOLIO</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="../../index.html">HOME</a></li>
+          <li><a href="../about/about.html">ABOUT</a></li>
+          <li class="dropdown">
+            <a href="../services/services.html">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a href="../services/graphic-design.html">SERVICE 1</a></li>
+              <li><a href="../services/graphic-design.html">SERVICE 2</a></li>
+              <li><a href="../services/graphic-design.html">SERVICE 3</a></li>
+            </ul>
+          </li>
+          <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+          <li><a href="../contact/contact.html" class="active">CONTACT</a></li>
         </ul>
         <div class="hamburger">
           <span></span>
@@ -25,35 +32,13 @@
         </div>
       </nav>
       <div class="nav-cta">
-        <a href="./contact.html">CONTACT ME</a>
+        <a href="../contact/contact.html">CONTACT ME</a>
       </div>
     </header>
 
     <main>
       <section id="hero-banner">
-        <h1>About Us</h1>
-      </section>
-
-      <section id="about-section">
-        <div class="about">
-          <div class="about-image">
-            <img
-              src="../assets/images/Advertising.JPG"
-              alt="Your image description"
-            />
-          </div>
-          <div class="about-text">
-            <h5>WHAT WE DO</h5>
-            <h2>Never Worry About Your Website Ever Again!</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedLorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sedLorem ipsum
-              dolor sit amet, consectetur adipiscing elit, sed do
-            </p>
-            <a href="#" class="dark-btn">ABOUT ME & MY APPROACH</a>
-          </div>
-        </div>
+        <h1>Contact Me</h1>
       </section>
 
       <section id="contact-section">
