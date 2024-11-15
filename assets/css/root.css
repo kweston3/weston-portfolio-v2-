@@ -13,6 +13,15 @@ body {
   align-items: center;
 }
 
+hr {
+  border: none;
+  height: 4px;
+  background-color: #333;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 /* Global h1 styling */
 h1 {
   font-size: 4.2rem;
@@ -489,17 +498,20 @@ main {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
+  transition: transform 0.3s ease;
 }
 
 /* Overlay background */
 .portfolio-item::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 0; /* Start below the image */
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
   z-index: 1;
+  transition: background-color 0.4s ease; /* Slide up on hover */
 }
 
 .portfolio-item img {
@@ -513,13 +525,28 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0;
   color: white;
   text-align: center;
   padding: 10px 20px;
   border-radius: 10px;
   white-space: nowrap;
   z-index: 2;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Hover effect */
+.portfolio-item:hover::before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-item:hover h3 {
+  opacity: 1; /* Show title */
+  transform: translate(-50%, -50%) translateY(-10px); /* Slight upward move for emphasis */
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05); /* Optional: Slight scale effect on hover */
 }
 
 /* FAQ SECTION */
